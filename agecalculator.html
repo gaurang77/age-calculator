@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AGE CALCULATOR</title>
+    <style>
+        header{
+            text-align: center;
+            font-size: 2em;
+            background-color: darkslategray;
+            color:rgb(34, 178, 53);
+            padding : 20px;
+        }
+        .form{
+            border:darkorchid 4px groove;
+            width:45%;
+            height:20%;
+            margin:30px auto;
+            position: relative;    
+        }
+        h2{
+            position: absolute;
+            color: coral;
+            margin-top: 1%;
+            left: 25%;
+        }
+        .date{
+            position : absolute;
+            top:38%;
+            left:40%;
+        }
+        .submit{
+            position : absolute;
+            top:70%;
+            left:47%;
+        }
+        .result{
+            display:none;
+            position: absolute;
+            left:33%;
+            background-color: aqua;
+            border: darkkhaki 4px dashed;
+            width:35%;
+            height:20%;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>AGE CALCULATOR</header>
+    <div class="form">
+        <form id="frm">
+            <h2>ENTER YOUR BIRTH DATE</h2>
+            <input type="date" name="date1" class="date"><br>
+            <input type="submit" class="submit">
+        </form>
+    </div>
+    <div class="result">
+        <div class="close">X</div>
+        <p id="res"></p>
+    </div>
+    <script src="age.js"></script>
+</body>
+</html>
