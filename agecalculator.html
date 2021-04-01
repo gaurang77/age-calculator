@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AGE CALCULATOR</title>
+    <style>
+        header{
+            text-align: center;
+            font-size: 2em;
+            background-color: darkslategray;
+            color:rgb(34, 178, 53);
+            padding : 20px;
+        }
+        .form{
+            border:darkorchid 4px groove;
+            width:75%;
+            margin:30px auto;
+            position: relative;    
+        }
+        h2{
+            text-align: center;
+            color: coral
+        }
+        .date,.submit{
+            width:137px;
+            margin:10px auto;
+            display: block;
+        }
+        
+        .result{
+            display:none;
+            width:75%;
+            margin:30px auto;
+            background-color: aqua;
+            border: darkkhaki 4px dashed;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #resBlock{
+            background-color: black;
+            color: white;
+            margin: 5px;
+            display: inline-block;
+            font-size: 32px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>AGE CALCULATOR</header>
+    <div class="form">
+        <form id="frm">
+            <h2>ENTER YOUR BIRTH DATE</h2>
+            <input type="date" name="date1" class="date"><br>
+            <input type="submit" class="submit">
+        </form>
+    </div>
+    <div class="result">
+        <p style="font-size: 10px;"><strong>Note:</strong> Year is assumed to have 365 days</p>
+        <p style="font-size: 10px;"><strong>Note:</strong> Month is assumed to have 30 days</p>
+        <p id="res"></p>
+    </div>
+    <script src="age.js"></script>
+</body>
+</html>
